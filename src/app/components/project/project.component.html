@@ -1,0 +1,113 @@
+<section class="container" > 
+        
+    <div class="titulo">
+        <h2>Meus <strong>Projetos</strong></h2>
+    </div>
+    
+    <div class="container-card" #container >
+      
+          
+            <div #cardAnimation1>
+                <div class="example-card" [style.backgroundImage]="card1.colorCard" >
+                    <div class="card" >
+                        <mat-card-header >
+                            <div><img class="_icone" src="{{ card1.icone }}" alt="{{ card1.altIcone }}"></div>
+                            <mat-card-title>{{ card1.titulo }}</mat-card-title>
+                        </mat-card-header>
+                        <img mat-card-image class="card-img" src="{{card1.imagem}}" alt="{{ card1.altImagem }}">
+                        <mat-card-content>
+                            @for (skill of card1.skills; track $index) {
+                                <button [style.backgroundColor]= "skill[1]" class="skill">
+                                    {{skill[0]}}
+                                </button>
+                            }
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <a href="{{card1.link}}">
+                                <button mat-raised-button class="example-button-row" color="warn">Saiba Mais</button>                       
+                            </a> 
+                        </mat-card-actions>
+                    </div>
+                </div>               
+            </div>
+
+            <div #cardAnimation2>
+                <div class="example-card" [style.backgroundImage]="card2.colorCard" >
+                    <div class="card" >
+                        <mat-card-header >
+                            <div><img class="_icone" src="{{ card2.icone }}" alt="{{ card2.altIcone }}"></div>
+                            <mat-card-title>{{ card2.titulo }}</mat-card-title>
+                        </mat-card-header>
+                        <img mat-card-image class="card-img" src="{{card2.imagem}}" alt="{{ card2.altImagem }}">
+                        <mat-card-content>
+                            @for (skill of card2.skills; track $index) {
+                                <button [style.backgroundColor]= "skill[1]" class="skill">
+                                    {{skill[0]}}
+                                </button>
+                            }
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <a href="{{card2.link}}">
+                                <button mat-raised-button class="example-button-row" color="accent">Saiba Mais</button>                       
+                            </a> 
+                        </mat-card-actions>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div #cardAnimation3>
+                <div class="example-card" [style.backgroundImage]="card3.colorCard" >
+                    <div class="card" >
+                        <mat-card-header >
+                            <div><img class="_icone" src="{{ card3.icone }}" alt="{{ card3.altIcone }}"></div>
+                            <mat-card-title>{{ card3.titulo }}</mat-card-title>
+                        </mat-card-header>
+                        <img mat-card-image class="card-img" src="{{card3.imagem}}" alt="{{ card3.altImagem }}">
+                        <mat-card-content>
+                            @for (skill of card3.skills; track $index) {
+                                <button [style.backgroundColor]= "skill[1]" class="skill">
+                                    {{skill[0]}}
+                                </button>
+                            }
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <a href="{{card3.link}}">
+                                <button mat-raised-button class="example-button-row" color="accent">Saiba Mais</button>                       
+                            </a> 
+                        </mat-card-actions>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div #cardAnimation4>
+                <div class="example-card" [style.backgroundImage]="card4.colorCard" >
+                    <div class="card" >
+                        <mat-card-header >
+                            <div><img class="_icone" src="{{ card4.icone }}" alt="{{ card4.altIcone }}"></div>
+                            <mat-card-title>{{ card4.titulo }}</mat-card-title>
+                        </mat-card-header>
+                        <img mat-card-image class="card-img" src="{{card4.imagem}}" alt="{{ card4.altImagem }}">
+                        <mat-card-content>
+                            @for (skill of card4.skills; track $index) {
+                                <button [style.backgroundColor]= "skill[1]" class="skill">
+                                    {{skill[0]}}
+                                </button>
+                            }
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <a href="{{card4.link}}">
+                                <button mat-raised-button class="example-button-row" color="accent">Saiba Mais</button>                       
+                            </a> 
+                        </mat-card-actions>
+                    </div>
+                </div>
+                
+            </div>
+      
+        
+        
+    </div>
+
+</section>

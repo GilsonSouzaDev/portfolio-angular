@@ -1,0 +1,101 @@
+._presentation{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: auto;
+}
+
+._present{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    
+}
+
+
+
+._text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 42px;
+}
+
+._imgdisplay{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+}
+
+._texto-present{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    height: auto;
+    gap: 32px;
+    color: white;
+}
+
+._button-present{
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    width: 220px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+._button-present:hover{
+    background-color: var(--text-color);
+    color: #fff;
+}
+
+._img-present{
+    align-items: center;
+    max-width: 400px;
+}
+
+._list-present{
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    gap: 32px;
+}
+
+._icon{
+    transition: transform 0.1s ease;
+}
+
+._icon:hover{
+    animation: subirDescer 1s ease-in-out;
+}
+
+
+@keyframes subirDescer {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 970px){
+    ._presentation{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin: 0 auto;
+    }
+
+    ._present{
+        justify-content: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,107 @@
+<section class="container" #container>
+
+    <h2 class="_titulo">Entre em <strong>Contato</strong></h2>
+
+    <form  class="example-form"    #form="ngForm"  (ngSubmit)="enviar(form)" >
+
+        <div #emailAnimation>
+            <input matInput placeholder="E-mail *" class="email"
+                name="emailContact" 
+                type="email"
+                ngModel
+                required
+                email
+                #emailContact="ngModel"
+            >
+            @if( (emailContact?.invalid && emailContact?.touched) || (emailContact?.dirty) ){
+                <div>
+                    @if(emailContact?.errors?.['required']){
+                        <app-message class="erro" mensagem= "O campo email deve ser preenchido"></app-message>
+                    }
+                    @if(emailContact?.errors?.['email']){
+                        <app-message mensagem= "Insira um email valido  ex: nome@mail.com"></app-message>
+                    }
+                </div>
+            }
+            
+        </div>
+
+        
+        <div class="mini-form">
+
+        
+            <div #nameAnimation>
+                <input placeholder="Nome *" class="nome"
+                    name="nome"
+                    type="text"
+                    ngModel
+                    required
+                    #nome="ngModel" 
+                >
+                @if( (nome?.invalid && nome?.touched) || (nome?.dirty) ){
+                    <div>
+                        @if(nome?.errors?.['required']){
+                            <app-message class="erro" mensagem= "O campo nome deve ser preenchido"></app-message>
+                        }
+                    </div>
+                }
+            </div>
+
+
+            <div #foneAnimation>
+                <input placeholder="Telefone (opcional)" class="fone"
+                    name="fone"
+                    type="tel"
+                    ngModel
+                    #fone="ngModel" 
+                >
+                @if( (fone?.invalid && fone?.touched) || (fone?.dirty) ){
+                    <div>
+                        @if(fone?.errors?.['tel']){
+                            <app-message class="erro" mensagem= "O campo nome deve ser preenchido"></app-message>
+                        }
+                    </div>
+                }
+                
+            </div>
+
+        </div>
+
+        <div #assuntoAnimation>
+            <input placeholder="Assunto *" class="assunto"
+                name="assunto" 
+                type="text"
+                ngModel
+                required
+                #assunto="ngModel" 
+            >
+            @if( (assunto?.invalid && assunto?.touched) || (assunto?.dirty) ){
+                <div>
+                    @if(assunto?.errors?.['required']){
+                        <app-message class="erro" mensagem= "Adicione um titulo indicando o assunto"></app-message>
+                    }
+                </div>
+            }
+        </div>
+
+        <div #mensagemAnimation>
+            <textarea placeholder="Mensagem *" class="conteudo"
+                name="conteudo"
+                ngModel
+                required
+                #conteudo="ngModel"
+            ></textarea>
+            @if( (conteudo?.invalid && conteudo?.touched) || (conteudo?.dirty) ){
+                <div>
+                    @if(conteudo?.errors?.['required']){
+                        <app-message class="erro" mensagem= "Preencha com sua mensagem"></app-message>
+                    }
+                </div>
+            }
+        </div>
+
+        <button mat-raised-button color="accent" type="submit" class="enviar" #buttonAnimation>Enviar</button>
+
+    </form>
+    
+</section>

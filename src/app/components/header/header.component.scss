@@ -1,0 +1,27 @@
+._toobar{
+    display: flex;
+    border-bottom: 4px solid var(--base-color-efect);
+    //background-color: var(--cor-fundo);
+}
+
+._list{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cor_text{
+    color: var(--text-color);
+}
+
+button{
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 970px){
+    ._lista{
+        display: none;
+    }
+}

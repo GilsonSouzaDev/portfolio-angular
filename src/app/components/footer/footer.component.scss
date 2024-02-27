@@ -1,0 +1,11 @@
+._toobar{
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid var(--base-color-efect);
+    gap: 24px;
+    //background-color: var(--cor-fundo);
+}
+
+.cor_text{
+    color: var(--text-color);
+}

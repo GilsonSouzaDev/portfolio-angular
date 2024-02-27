@@ -1,0 +1,123 @@
+.container{
+    background-color: var(--base-color);
+    width: 100%;
+    
+}
+
+._titulo{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 64px;
+}
+
+.example-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding-bottom: 64px;
+    height: auto;
+    margin: 0 auto;
+    gap: 24px;
+    
+
+}
+
+
+.mini-form{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    
+    
+}
+.nome{
+    background-color: var(--base-color-button);
+    border: solid 1.5px var(--text-color);
+    color: #fff;
+    width: 400px;
+    height: 42px;
+    padding: 6px;
+    font-size: 1.5rem;
+}
+.fone{
+    background-color: var(--base-color-button);
+    border: solid 1.5px var(--text-color);
+    color: #fff;
+    width: 400px;
+    height: 42px;
+    padding: 6px;
+    font-size: 1.5rem;
+}
+.email{
+    background-color: var(--base-color-button);
+    border: solid 1.5px var(--text-color);
+    color: #fff;
+    width: 816px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.assunto{
+    background-color: var(--base-color-button);
+    border: solid 1.5px var(--text-color);
+    color: #fff;
+    width: 816px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.conteudo{
+    background-color: var(--base-color-button);
+    border: solid 1.5px var(--text-color);
+    color: #fff;
+    width: 806px;
+    height: 140px;
+    padding: 16px;
+    font-size: 1.5rem;
+}
+
+.enviar{
+    color: var(--text-color);
+    cursor: pointer;
+    width: 220px;
+    height: 55px;
+}
+
+.enviar:hover{
+    background-color: var(--text-color);
+    color: #fff;
+}
+
+@media screen and (max-width: 970px){
+    .mini-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        max-width: 420px;
+        width: 420px;
+        .nome{
+            width: 420px;
+            margin-bottom: 4px;
+        }
+        .fone{
+            width: 420px;
+            margin-top: 4px;
+        }
+    }
+    .conteudo{
+        max-width: 400px;
+    }
+    .assunto{
+        max-width: 410px;
+    }
+    .email{
+        max-width: 410px;
+    }
+
+}

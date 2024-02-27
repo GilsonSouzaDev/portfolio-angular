@@ -1,0 +1,91 @@
+.container{
+    background-color: var(--base-color);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 2rem;
+    gap: 8px;
+}
+
+.container-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1086px;
+    gap: 64px;
+}
+
+.example-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    border-radius: 10%;
+    border: 4px solid var(--base-color-efect);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    width: 90%;
+    gap: 8px;
+    color: #fff;
+}
+
+mat-card-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+}
+
+
+._icone{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.card-img{
+    width: 85%;
+    height: 55%;
+    border-radius: 10%;
+}
+
+mat-card-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4px;
+    width: 85%;
+    gap: 4px;
+}
+
+mat-card-title{
+    font-size: 1.2rem;
+}
+
+.skill{
+   border: none;
+   color: #fff;
+}
+

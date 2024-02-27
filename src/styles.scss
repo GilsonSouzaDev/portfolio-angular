@@ -1,0 +1,58 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+
+$angular-primary: mat.define-palette(mat.$gray-palette, 900);
+$angular-accent: mat.define-palette(mat.$deep-orange-palette, 700);
+$angular-warn: mat.define-palette(mat.$purple-palette, 900);
+
+
+
+$angular-theme: mat.define-light-theme(
+    (
+        color:(
+            primary: $angular-primary,
+            accent: $angular-accent,
+            warn: $angular-warn
+           
+        )
+    )
+);
+
+@include mat.all-component-themes($angular-theme);
+
+html, body { height: 100%; }
+body { 
+    margin: 0 auto; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-image: url(./assets/fundoparallax4.webp); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+strong{
+    color: var(--text-color);
+    --title-font: 'Poppins', sans-serif;
+}
+
+
+
+:root{
+    --text-color: #E64A19;
+    --base-blue: #0b111b;
+    --base-color: #212121;
+    --base-color-second: #28313a;
+    --color-card: url(/assets/fundoparallax4.webp);
+    --tex-color: #fff;
+    --text-color-strong:  darkorange;
+    --base-color-efect: #fad961;
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'Spartan', sans-serif; 
+}
+
+
+
+

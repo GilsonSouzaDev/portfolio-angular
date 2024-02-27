@@ -1,0 +1,59 @@
+<div class="container" #container>
+
+    <div class="titulo">
+        <h2>Minhas <strong>Skills</strong></h2>
+    </div>
+   
+    <section class="container-skills">
+
+        <div class="skills-icones" #iconesAnimation>
+        @for (icons of icones; track $index){
+            <div class="icones">    
+                <img (click)="botaoClicado(icons.name)" class="icons" src="{{icons.src}}"   alt="{{icons.alt}}">   
+            </div>
+        }
+        </div>
+        @if (cardAtual.titulo != "") {
+            <div class="skills">
+                <div>
+                    <div class="titulo-skills">
+                        <h2>{{cardAtual.titulo}}</h2>
+                    </div>
+                    <div class="textSkill">
+                        <span >Tenho <strong>Conhecimento</strong></span>
+                    </div>
+                    
+                    <div>
+                        @for (conhecidas of cardAtual.conhecidas; track $index) {
+                            <button [style.backgroundColor]= "conhecidas[1]" class="conhecidas" #buttons>
+                                {{conhecidas[0]}}
+                            </button>
+                        }
+                    </div>
+                    <div class="textSkill">
+                        <span >Ja tive <strong>Contato</strong></span>
+                    </div>
+    
+                    <div>
+                        @for (estudadas of cardAtual.estudadas; track $index) {
+                            <button [style.backgroundColor]= "estudadas[1]" class="conhecidas" #buttons>
+                                {{estudadas[0]}}
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+        }@else{
+            <div class="skills">
+                <div #imagemSkill> 
+                    <span>Escolha uma <strong>Skill</strong></span>
+                    <img src="/assets/undraw_select_option_re_u4qn.svg" alt="Escolha uma Skill" >
+                </div>
+            </div>
+        }
+        
+       
+    </section>
+
+</div>
+  
