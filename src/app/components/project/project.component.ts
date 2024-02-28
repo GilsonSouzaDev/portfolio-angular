@@ -33,10 +33,10 @@ constructor(
 ){}
   
 ngAfterViewInit(): void {
-    this.animation(this.cardAnimation1.nativeElement, this.container.nativeElement, 1, 1, -100);
-    this.animation(this.cardAnimation2.nativeElement, this.container.nativeElement, 2, 1, 100);
-    this.animation(this.cardAnimation3.nativeElement, this.container.nativeElement, 1, 1, -100);
-    this.animation(this.cardAnimation4.nativeElement, this.container.nativeElement, 2, 1, 100);
+    this.animation(this.cardAnimation1.nativeElement, this.container.nativeElement, 4, 10, -100);
+    this.animation(this.cardAnimation2.nativeElement, this.container.nativeElement, 6, 10, 100);
+    this.animation(this.cardAnimation3.nativeElement, this.container.nativeElement, 4, 10, -100);
+    this.animation(this.cardAnimation4.nativeElement, this.container.nativeElement, 6, 10, 100);
 }
 
 

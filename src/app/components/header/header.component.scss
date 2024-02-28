@@ -1,7 +1,12 @@
 ._toobar{
     display: flex;
     border-bottom: 4px solid var(--base-color-efect);
-    //background-color: var(--cor-fundo);
+    
+}
+:host ::ng-deep ._toobar{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 ._list{

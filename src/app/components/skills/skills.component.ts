@@ -42,7 +42,7 @@ export class SkillsComponent implements AfterViewInit{
 
 ngAfterViewInit(): void {
   setTimeout(() => {
-    this.animation(this.iconesAnimation.nativeElement, this.container.nativeElement, 2.5, 1, -100);
+    this.animation(this.iconesAnimation.nativeElement, this.container.nativeElement, 3, 3, -100);
   }, 100);
 }
   

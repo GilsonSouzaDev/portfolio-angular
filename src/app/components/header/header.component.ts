@@ -17,13 +17,58 @@ export class HeaderComponent implements AfterViewInit{
   @ViewChild('container', {static: true}) container!: ElementRef<HTMLDivElement>;
 
 
-  constructor(private animationService: AnimationsService){}
+  constructor(private animationService: AnimationsService,
+              private el: ElementRef
+             )
+  {
+
+  }
   
   protected animation = this.animationService.aplicarAnimacaoApresentacao;
   
   ngAfterViewInit(): void {
     this.animation(this.angularIcon.nativeElement,this.container.nativeElement, 2, 1,-100)
     this.animation(this.divH.nativeElement,this.container.nativeElement, 2, 1 , 100,)    
+  }
+
+  ngOnInit(): void {}
+
+  navigateToHeader() { 
+    this.scrollToComponent('app-header');
+  }
+
+  navigateToSobreMim() {
+    this.scrollToComponent('sobremim');
+  }
+
+  navigateToSkills(){
+    this.scrollToComponent('skills');
+  }
+
+  navigateToProject(){
+    this.scrollToComponentProject('project');
+  }
+
+  navigateToContact(){
+    this.scrollToComponent('contact');
+  }
+
+
+
+  // Adicione mais métodos de navegação conforme necessário
+
+  private scrollToComponent(componentId: string) {
+    const element = document.getElementById(componentId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  private scrollToComponentProject(componentId: string) {
+    const element = document.getElementById(componentId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
   

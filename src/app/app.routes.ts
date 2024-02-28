@@ -1,16 +1,17 @@
 import { Routes } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
 
-    { path: '', redirectTo: 'header', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { 
-        path: 'header', 
-        component: HeaderComponent
+        path: 'home', 
+        component: AppComponent
     },
     {
-        path: 'presetantion',
+        path: 'presentation',
         component: PresentationComponent
     },
 ];
