@@ -51,7 +51,12 @@ export class ContactComponent implements AfterViewInit{
 
 
   enviar(form: NgForm){
-    
+    if(form.invalid){
+      alert("voce precisa preencher os campos");
+      form.dirty;
+    }
+    console.log(form.value);
+      form.reset();
   }
 
 }

@@ -32,7 +32,7 @@ export class PresentationComponent implements AfterViewInit{
   
   ngAfterViewInit(): void {
 
-    this.animation(this.imagemPresent.nativeElement, this.container.nativeElement, 1, 1, -100)
+    this.animation(this.imagemPresent.nativeElement, this.container.nativeElement, 3, 1, -100)
 
     this.animation(this.nome.nativeElement,this.container.nativeElement, 1, 1, 100)
     this.animation(this.sobrenome.nativeElement,this.container.nativeElement, 2, 1, 100)

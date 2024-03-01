@@ -1,5 +1,7 @@
+@import "../../../styles/variable.scss";
+
 .container{
-    background-color: var(--base-color);
+    background-color: $gradient;
     width: 100%;
     
 }
