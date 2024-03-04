@@ -29,7 +29,7 @@ gsap.from(elemento, {
       start: 'top center', 
       end : 'bottom center',
       scrub: true,
-      markers: true
+      
     }
   });
 }
@@ -77,7 +77,6 @@ gsap.fromTo(elemento, { x: posicaoInicialX, y: posicaoInicialY }, {
     trigger: section,
     start: 'top center', 
     end : 'bottom center',
-    markers: true
     }
   });
 }
@@ -90,24 +89,19 @@ aplicarAnimacaoContact(elemento: HTMLElement,
 ): void {
 
 gsap.from(elemento, {
-  x: posicaoInicialX,
+  y: posicaoInicialX,
   opacity: 0,
   duration: duracao,
-  ease: 'elastic.out(1, 2)',
+  ease: 'circ.out',
   delay: 0.5 * delayMultiplier,
     scrollTrigger: {
       trigger: section,
       start: 'center bottom', 
       end : 'bottom bottom',
       scrub: true,
-      markers: true
     }
   });
 }
-
-
-
-
 
 
 }

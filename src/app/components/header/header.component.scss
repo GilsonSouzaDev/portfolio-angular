@@ -1,9 +1,11 @@
 ._toobar{
     display: flex;
     border-bottom: 4px solid var(--base-color-efect);
+    width: 100%;
     
 }
 :host ::ng-deep ._toobar{
+    width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -26,7 +28,23 @@ button{
 }
 
 @media screen and (max-width: 970px){
+    
     ._lista{
         display: none;
+    }
+
+    :host ::ng-deep ._toobar{
+        height: 70px;
+        width: 100%;
+        position: relative;
+        top: none;
+        z-index: none;
+    }
+
+    .cor_text{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 auto;
+        
     }
 }

@@ -1,6 +1,6 @@
 import { AnimationsService } from './../../services/animations.service';
 import { AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
-import { FormControl, FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
@@ -38,12 +38,12 @@ export class ContactComponent implements AfterViewInit{
   protected animation = this.animationService.aplicarAnimacaoContact;
   
   ngAfterViewInit(): void {
-    this.animation(this.emailAnimation.nativeElement, this.container.nativeElement, 2, 1, 100);
-    this.animation(this.nameAnimation.nativeElement, this.container.nativeElement, 2, 2, -100);
-    this.animation(this.foneAnimation.nativeElement, this.container.nativeElement, 2, 3, 100);
-    this.animation(this.assuntoAnimation.nativeElement, this.container.nativeElement, 2, 4, -100);
-    this.animation(this.mensagemAnimation.nativeElement, this.container.nativeElement, 2, 5, 100);
-    this.animation(this.buttonAnimation.nativeElement, this.container.nativeElement, 2, 6, -100);
+/*     this.animation(this.emailAnimation.nativeElement, this.container.nativeElement, 1, 1, 100);
+    this.animation(this.nameAnimation.nativeElement, this.container.nativeElement, 1, 1, -100);
+    this.animation(this.foneAnimation.nativeElement, this.container.nativeElement, 1, 1, 100);
+    this.animation(this.assuntoAnimation.nativeElement, this.container.nativeElement, 1, 1, -100);
+    this.animation(this.mensagemAnimation.nativeElement, this.container.nativeElement, 1, 1, 100);
+    this.animation(this.buttonAnimation.nativeElement, this.container.nativeElement, 1, 1, -100); */
   }
   
 

@@ -1,19 +1,24 @@
-._presentation{
+ 
+._presentation{ 
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    width: 100%;
     margin: 0 auto;
-    max-width: 1100px;
-    margin-top: 64px;
     height: auto;
+    box-sizing: border-box; /* Isso inclui a largura e altura junto com padding e bordas */
+    background: url('../../../assets/fundoparallax4.webp') center/cover no-repeat;
 }
 
 ._present{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: flex-end;
     width: 600px;
-    
+    height: 400px;
 }
-
-
 
 ._text{
     display: flex;
@@ -87,16 +92,44 @@
 }
 
 @media screen and (max-width: 970px){
+    
+   
+
+    
     ._presentation{
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 16px;
+        gap: 4px;
         margin: 0 auto;
     }
 
     ._present{
         justify-content: center;
         text-align: center;
+        height: 300px;
+        width: 350px;
     }
+
+   
+}
+
+@media screen and (max-width: 670px){
+
+
+    ._presentation{
+        padding: 64px 16px 64px 16px;
+    }
+
+    ._img-present{
+        max-width: 350px;
+    }
+
+    ._texto-present{
+        font-size: 1.7rem;
+        height: auto;
+        gap: 24px;
+        color: white;
+    }
+
 }

@@ -25,11 +25,7 @@ $angular-theme: mat.define-light-theme(
 html, body { height: 100%; }
 body { 
     margin: 0 auto; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    background-image: url(./assets/fundoparallax4.webp); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     height: 100vh;
 }
 
@@ -52,7 +48,6 @@ strong{
     --title-font: 'Poppins', sans-serif;
     --body-font: 'Spartan', sans-serif; 
 }
-
 
 
 

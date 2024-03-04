@@ -4,7 +4,6 @@
     flex-direction: column;
     background-color: var(--base-color);
     margin: 0 auto;
-    margin-top: 64px;
     height: auto;
 }
 
@@ -51,5 +50,28 @@ strong{
     ._sobre-mim{
         flex-direction: column;
         justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 670px){
+
+    ._container{
+        min-width: 100%;
+    }
+
+    ._limite{
+        width: 350px;
+        height: auto;
+    }
+
+    ._cont{
+        width: 350px;
+        padding: 4px;
+        height: auto;
+    }
+
+    ._sobre-mim{
+        max-width: 350px;
+        padding: 4px;
     }
 }

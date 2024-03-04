@@ -89,3 +89,24 @@ mat-card-title{
    color: #fff;
 }
 
+@media screen and (max-width: 970px){
+    .example-card{    
+        width: 300px;  
+    }
+}
+
+
+
+
+@media screen and (max-width: 670px){
+    .container{
+        width: 100%;
+    }
+
+    .example-card{    
+        width: 280px;  
+    }
+
+
+}
+

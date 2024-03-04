@@ -9,3 +9,10 @@
 .cor_text{
     color: var(--text-color);
 }
+
+
+@media screen and (max-width: 670px){
+    ._toobar{
+        height: 100px;
+    }
+}

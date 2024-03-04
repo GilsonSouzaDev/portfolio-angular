@@ -1,8 +1,8 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { gsap } from 'gsap'; 
 import { AnimationsService } from '../../services/animations.service';
+
 
 @Component({
   selector: 'app-presentation',

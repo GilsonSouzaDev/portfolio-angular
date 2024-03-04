@@ -1,7 +1,6 @@
 .container{
     background-color: var(--base-color);
-    width: 100%;
-    
+    width: 100%;   
 }
 
 ._titulo{
@@ -22,17 +21,14 @@
     margin: 0 auto;
     gap: 24px;
     
-
 }
-
 
 .mini-form{
     display: flex;
     justify-content: center;
-    gap: 8px;
-    
-    
+    gap: 8px;      
 }
+
 .nome{
     background-color: var(--base-color-button);
     border: solid 1.5px var(--text-color);
@@ -42,6 +38,7 @@
     padding: 6px;
     font-size: 1.5rem;
 }
+
 .fone{
     background-color: var(--base-color-button);
     border: solid 1.5px var(--text-color);
@@ -51,6 +48,7 @@
     padding: 6px;
     font-size: 1.5rem;
 }
+
 .email{
     background-color: var(--base-color-button);
     border: solid 1.5px var(--text-color);
@@ -60,6 +58,7 @@
     padding: 10px;
     font-size: 1.5rem;
 }
+
 .assunto{
     background-color: var(--base-color-button);
     border: solid 1.5px var(--text-color);
@@ -120,4 +119,41 @@
         max-width: 410px;
     }
 
+}
+
+@media screen and (max-width: 670px){
+
+
+
+    .container{
+        height: 900px;
+    }
+
+    .example-form{
+        width: 300px;
+    }
+    
+    .mini-form{
+        width: 294px;
+        height: auto;
+        .nome{
+            width: 280px;
+            margin-bottom: 4px;
+            
+        }
+        .fone{
+            width: 280px;
+            margin-top: 4px;
+        }
+    }
+
+    .conteudo{
+        max-width: 260px;
+    }
+    .assunto{
+        max-width: 272px;
+    }
+    .email{
+        max-width: 270px;
+    }
 }

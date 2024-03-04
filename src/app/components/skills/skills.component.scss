@@ -28,7 +28,7 @@ h2{
     border-radius: 30px;
     border: solid 2px var(--text-color);
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 60%;
     height: 500px;   
 }
 
@@ -90,5 +90,25 @@ h2{
 @media screen and (max-width: 970px){
     .container-skills{
         flex-direction: column;
+        min-width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 670px){
+
+    .container-skills{
+        min-width: 90%;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .icons{
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .skills-icones{        
+        justify-content: center;         
     }
 }
