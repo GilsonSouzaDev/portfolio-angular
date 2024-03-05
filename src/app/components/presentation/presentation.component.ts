@@ -43,4 +43,29 @@ export class PresentationComponent implements AfterViewInit{
     
   }
 
+  abrirLinkedin(){
+    window.open(`https://www.linkedin.com/in/gilsonsouza-dev/`,'_blank');
+  }
+
+
+  abrirWhatsApp() {
+    // Substitua 'seu_numero_de_telefone' pelo seu número de telefone com código do país
+    const numeroTelefone = '11947799976';
+    const mensagemInicial = 'Estou aqui pelo seu portifólio';
+    window.open(`https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagemInicial)}`, '_blank');
+  }
+
+  abrirTelegram() {
+    // Substitua 'seu_nome_de_usuario' pelo seu nome de usuário no Telegram
+    const nomeUsuario = '@gilsonsouzadev';
+    const mensagemInicial = 'Estou aqui pelo seu portifólio';
+    window.open(`https://t.me/${nomeUsuario}?start=${encodeURIComponent(mensagemInicial)}`, '_blank');
+  }
+
+  abrirGitHub(){
+    window.open(`https://github.com/GilsonSouzaDev`,'_blank');
+  }
+
+
+
 }

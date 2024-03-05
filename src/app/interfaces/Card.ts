@@ -4,7 +4,8 @@ export interface Card {
     altIcone: string;
     imagem: string;
     altImagem: string;
-    link: string;
+    linkDeploy: string;
+    linkGitHub: string;
     colorCard: string;
     skills: Map<string, string>;
 }

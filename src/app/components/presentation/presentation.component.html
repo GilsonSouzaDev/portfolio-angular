@@ -19,13 +19,13 @@
                     Developer - <strong>Full Stack</strong>
                 </span>
             </div>
-            <button mat-raised-button color="accent" class="_button-present" #linkedin>
+            <button mat-raised-button color="accent" class="_button-present" (click)="abrirLinkedin()" #linkedin>
                 Linkedin
             </button>
             <div class="example-button-row  _list-present">            
-                <img class="_icon" src="/assets/icons8-telegram.svg" alt="" #telegram>               
-                <img class="_icon" src="/assets/icons8-whatsapp.svg" alt="" #whats>
-                <img class="_icon" src="/assets/icons8-github.svg" alt="" #github>               
+                <img class="_icon" src="/assets/icons8-telegram.svg" alt="telegran" (click)="abrirTelegram()" #telegram>                  
+                <img class="_icon" src="/assets/icons8-whatsapp.svg" alt="WhatsApp" (click)="abrirWhatsApp()" #whats>
+                <img class="_icon" src="/assets/icons8-github.svg" alt="GitHub" (click)="abrirGitHub()" #github>               
             </div>
         </div>
     </div>

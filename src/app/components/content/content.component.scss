@@ -37,7 +37,7 @@ strong{
 ._texto-sobre{
     color: white;
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 ._limite{
@@ -51,6 +51,11 @@ strong{
         flex-direction: column;
         justify-content: space-around;
     }
+
+    ._texto-sobre{
+       
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 670px){
@@ -60,7 +65,8 @@ strong{
     }
 
     ._limite{
-        width: 350px;
+        margin: 0 auto;
+        width: 310px;
         height: auto;
     }
 
@@ -73,5 +79,10 @@ strong{
     ._sobre-mim{
         max-width: 350px;
         padding: 4px;
+    }
+
+    ._texto-sobre{
+       
+        font-size: 1rem;
     }
 }

@@ -13,7 +13,8 @@ export class CardService {
       "altIcone": "icone-c#",
       "imagem": "/assets/card-img/rest-api candidato.jpeg",
       "altImagem": "candidato-img",
-      "link": "",
+      "linkDeploy": "",
+      "linkGitHub": "https://github.com/GilsonSouzaDev/RestAPI-RocketseatAuction",
       "colorCard": "var(--color-card)",
       "skills": new Map([
         ["MVC", "#f39c12"],
@@ -31,7 +32,8 @@ export class CardService {
       "altIcone": "",
       "imagem": "",
       "altImagem": "",
-      "link": "",
+      "linkDeploy": "",
+      "linkGitHub": "",
       "colorCard": "var(--color-card)",
       "skills": new Map([["", ""]])
     },
@@ -41,7 +43,8 @@ export class CardService {
       "altIcone": "",
       "imagem": "",
       "altImagem": "",
-      "link": "",
+      "linkDeploy": "",
+      "linkGitHub": "",
       "colorCard": "var(--color-card)",
       "skills": new Map([["", ""]])
     },
@@ -51,7 +54,8 @@ export class CardService {
       "altIcone": "",
       "imagem": "",
       "altImagem": "",
-      "link": "",
+      "linkDeploy": "",
+      "linkGitHub": "",
       "colorCard": "var(--color-card)",
       "skills": new Map([["", ""]])
     }
