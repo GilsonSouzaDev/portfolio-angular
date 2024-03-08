@@ -108,7 +108,6 @@
         justify-content: center;
         text-align: center;
         height: 300px;
-        width: 350px;
     }
 
    
@@ -119,14 +118,30 @@
 
     ._presentation{
         padding: 64px 16px 64px 16px;
+        
     }
+    ._present{
+        width: 350px;
+    }
+
+    ._imgdisplay{
+        width: 350px;
+        height: 300px;
+    }
+
+    ._img-present{
+        max-width: none;
+        width: 350px;
+        height: 300px;
+    }
+
 
     ._img-present{
         max-width: 350px;
     }
 
     ._texto-present{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         height: auto;
         gap: 24px;
         color: white;

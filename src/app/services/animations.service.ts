@@ -81,7 +81,7 @@ gsap.fromTo(elemento, { x: posicaoInicialX, y: posicaoInicialY }, {
   });
 }
 
-aplicarAnimacaoContact(elemento: HTMLElement,
+aplicarAnimacaoSobre(elemento: HTMLElement,
   section: HTMLElement,
   duracao: number,
   delayMultiplier: number,
@@ -89,19 +89,19 @@ aplicarAnimacaoContact(elemento: HTMLElement,
 ): void {
 
 gsap.from(elemento, {
-  y: posicaoInicialX,
+  x: posicaoInicialX,
   opacity: 0,
   duration: duracao,
-  ease: 'circ.out',
+  ease: 'expo.out',
   delay: 0.5 * delayMultiplier,
     scrollTrigger: {
       trigger: section,
-      start: 'center bottom', 
-      end : 'bottom bottom',
+      start: 'top center', 
+      end : 'bottom center',
       scrub: true,
+      
     }
   });
 }
-
 
 }

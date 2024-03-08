@@ -21,7 +21,7 @@ export class ContentComponent {
 
   constructor(private animationService: AnimationsService){}
   
-  protected animation = this.animationService.aplicarAnimacao;
+  protected animation = this.animationService.aplicarAnimacaoSobre;
   
   ngAfterViewInit(): void {
     this.animation(this.conteudo.nativeElement,this.container.nativeElement, 2.5 , 1, -100)

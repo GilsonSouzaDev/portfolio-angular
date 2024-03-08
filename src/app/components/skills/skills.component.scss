@@ -90,6 +90,8 @@ h2{
 @media screen and (max-width: 970px){
     .container-skills{
         flex-direction: column;
+        justify-content: center;
+        gap: 16px;
         min-width: 75%;
     }
 }

@@ -1,11 +1,13 @@
 import { AnimationsService } from './../../services/animations.service';
-import { AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, inject} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { NgForm } from '@angular/forms';
 import { MessageComponent } from '../message/message.component';
+import { NotificacoesComponent } from '../notificacoes/notificacoes.component';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -17,13 +19,14 @@ import { MessageComponent } from '../message/message.component';
     FormsModule,
     MatInputModule,
     MessageComponent,
-    MatButtonModule
+    MatButtonModule,
+    NotificacoesComponent
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 
-export class ContactComponent implements AfterViewInit{
+export class ContactComponent{
 
   @ViewChild('container', {static: true}) container!: ElementRef<HTMLDivElement>;
   @ViewChild('emailAnimation', {static: true}) emailAnimation!: ElementRef<HTMLDivElement>;
@@ -33,30 +36,37 @@ export class ContactComponent implements AfterViewInit{
   @ViewChild('mensagemAnimation', {static: true}) mensagemAnimation!: ElementRef<HTMLDivElement>;
   @ViewChild('buttonAnimation', {static: true}) buttonAnimation!: ElementRef<HTMLDivElement>;
 
-  constructor(private animationService: AnimationsService){}
+  constructor(private animationService: AnimationsService,
+              public dialog: MatDialog,          
+    ){}
   
-  protected animation = this.animationService.aplicarAnimacaoContact;
-  
-  ngAfterViewInit(): void {
-/*     this.animation(this.emailAnimation.nativeElement, this.container.nativeElement, 1, 1, 100);
-    this.animation(this.nameAnimation.nativeElement, this.container.nativeElement, 1, 1, -100);
-    this.animation(this.foneAnimation.nativeElement, this.container.nativeElement, 1, 1, 100);
-    this.animation(this.assuntoAnimation.nativeElement, this.container.nativeElement, 1, 1, -100);
-    this.animation(this.mensagemAnimation.nativeElement, this.container.nativeElement, 1, 1, 100);
-    this.animation(this.buttonAnimation.nativeElement, this.container.nativeElement, 1, 1, -100); */
-  }
-  
-
-
-
 
   enviar(form: NgForm){
     if(form.invalid){
-      alert("voce precisa preencher os campos");
+       this.onError("Preencha todos os campos obrigatorios"); 
       form.dirty;
-    }
-    console.log(form.value);
+    }else{
+      const assunto = form.value.assunto
+      const destinatario = 'gilsonsouza.dev@gmail.com'
+      const mensagem = form.value.nome + "\n" + "E-mail: "+ form.value.emailContact + "\n" +"Telefone: "+ form.value.fone + "\n" + form.value.conteudo
+      this.abrirClienteEmail(destinatario, assunto, mensagem);
+      console.log(mensagem);
+      console.log(form.value);
       form.reset();
+    }
+
   }
+
+  abrirClienteEmail(destinatario: string, assunto: string, mensagem: string ) {
+    const corpoEmail = `mailto:${destinatario}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(mensagem)}`;
+    window.location.href = corpoEmail;
+  }
+
+  onError(errorMsg: string) {
+      this.dialog.open(NotificacoesComponent, {
+        data: errorMsg
+  });  
+}
+
 
 }

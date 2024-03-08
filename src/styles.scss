@@ -25,13 +25,14 @@ $angular-theme: mat.define-light-theme(
 html, body { height: 100%; }
 body { 
     margin: 0 auto; 
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Raleway", sans-serif;
     height: 100vh;
 }
 
 strong{
     color: var(--text-color);
-    --title-font: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 
