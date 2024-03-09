@@ -44,7 +44,6 @@ export class ContactComponent{
   enviar(form: NgForm){
     if(form.invalid){
        this.onError("Preencha todos os campos obrigatorios"); 
-      form.dirty;
     }else{
       const assunto = form.value.assunto
       const destinatario = 'gilsonsouza.dev@gmail.com'
@@ -64,7 +63,13 @@ export class ContactComponent{
 
   onError(errorMsg: string) {
       this.dialog.open(NotificacoesComponent, {
-        data: errorMsg
+      data: errorMsg
+    });  
+  }
+
+  onCorrect(errorMsg: string) {
+    this.dialog.open(NotificacoesComponent, {
+    data: errorMsg
   });  
 }
 
