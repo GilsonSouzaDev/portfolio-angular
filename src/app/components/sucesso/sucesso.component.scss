@@ -1,0 +1,25 @@
+.container{
+    background-color: var(--base-blue);
+    border: 2px solid rgb(33, 201, 33);
+    padding: 8px;
+  }
+  
+  .mensagem{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    color: var(--tex-color);
+  }
+  
+  h1{
+    text-align: center;
+  }
+  
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .center-button {
+    margin: 0 auto;
+  }

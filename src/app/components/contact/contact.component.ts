@@ -8,7 +8,7 @@ import { NgForm } from '@angular/forms';
 import { MessageComponent } from '../message/message.component';
 import { NotificacoesComponent } from '../notificacoes/notificacoes.component';
 import { MatDialog } from '@angular/material/dialog';
-
+import { SucessoComponent } from '../sucesso/sucesso.component';
 
 @Component({
   selector: 'app-contact',
@@ -19,8 +19,7 @@ import { MatDialog } from '@angular/material/dialog';
     FormsModule,
     MatInputModule,
     MessageComponent,
-    MatButtonModule,
-    NotificacoesComponent
+    MatButtonModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
@@ -36,21 +35,24 @@ export class ContactComponent{
   @ViewChild('mensagemAnimation', {static: true}) mensagemAnimation!: ElementRef<HTMLDivElement>;
   @ViewChild('buttonAnimation', {static: true}) buttonAnimation!: ElementRef<HTMLDivElement>;
 
+
   constructor(private animationService: AnimationsService,
-              public dialog: MatDialog,          
-    ){}
+              public dialog: MatDialog,
+  )
+  {
+    
+  }
   
 
   enviar(form: NgForm){
     if(form.invalid){
-       this.onError("Preencha todos os campos obrigatorios"); 
+       this.onError("Preencha todos os campos obrigatorios");
     }else{
+      this.onCorrect("E-mail encaminhado para caixa de saida");
       const assunto = form.value.assunto
       const destinatario = 'gilsonsouza.dev@gmail.com'
       const mensagem = form.value.nome + "\n" + "E-mail: "+ form.value.emailContact + "\n" +"Telefone: "+ form.value.fone + "\n" + form.value.conteudo
       this.abrirClienteEmail(destinatario, assunto, mensagem);
-      console.log(mensagem);
-      console.log(form.value);
       form.reset();
     }
 
@@ -67,9 +69,9 @@ export class ContactComponent{
     });  
   }
 
-  onCorrect(errorMsg: string) {
-    this.dialog.open(NotificacoesComponent, {
-    data: errorMsg
+  onCorrect(sucessoMsg: string) {
+    this.dialog.open(SucessoComponent, {
+    data: sucessoMsg
   });  
 }
 

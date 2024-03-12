@@ -13,7 +13,10 @@ export class NotificacoesComponent implements AfterViewInit{
 
 @ViewChild('container', {static: true}) container!: ElementRef<HTMLDivElement>;
 
-constructor(@Inject(MAT_DIALOG_DATA) public data: string) 
+protected mensagem: string = "Solicitação Negada";
+
+constructor(@Inject(MAT_DIALOG_DATA) public data: string,
+            ) 
 {
 
 }
