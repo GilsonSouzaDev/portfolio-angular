@@ -30,7 +30,7 @@ export class CardService {
       "titulo": "Alura-Geek",
       "icone": "/assets/icons/angular-icon-seeklogo.svg",
       "altIcone": "icone-angular",
-      "imagem": "/assets/card-img/alura-geek-img.png",
+      "imagem": "/assets/card-img/alura-geek.png",
       "altImagem": "imagem-alura-geek",
       "linkDeploy": "https://alura-geek-topaz.vercel.app/home",
       "linkGitHub": "https://github.com/GilsonSouzaDev/alura-geek",
