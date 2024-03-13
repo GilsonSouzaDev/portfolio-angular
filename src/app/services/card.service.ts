@@ -14,7 +14,7 @@ export class CardService {
       "imagem": "/assets/card-img/rest-api candidato.jpeg",
       "altImagem": "candidato-img",
       "linkDeploy": "",
-      "linkGitHub": "https://github.com/GilsonSouzaDev/RestAPI-RocketseatAuction",
+      "linkGitHub": "https://github.com/GilsonSouzaDev/RestAPI-Candidato",
       "colorCard": "var(--color-card)",
       "skills": new Map([
         ["MVC", "#f39c12"],
