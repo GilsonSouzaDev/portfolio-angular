@@ -27,15 +27,22 @@ export class CardService {
       ])
     },
     {
-      "titulo": "",
-      "icone": "",
-      "altIcone": "",
-      "imagem": "",
-      "altImagem": "",
-      "linkDeploy": "",
-      "linkGitHub": "",
+      "titulo": "Alura-Geek",
+      "icone": "/assets/icons/angular-icon-seeklogo.svg",
+      "altIcone": "icone-angular",
+      "imagem": "/assets/card-img/alura-geek-img.png",
+      "altImagem": "imagem-alura-geek",
+      "linkDeploy": "https://alura-geek-topaz.vercel.app/home",
+      "linkGitHub": "https://github.com/GilsonSouzaDev/alura-geek",
       "colorCard": "var(--color-card)",
-      "skills": new Map([["", ""]])
+      "skills": new Map([
+      ["Components", "#3498db"],
+      ["Services", "#e74c3c"],
+      ["Routing", "#f39c12"],
+      ["Forms", "#9b59b6"],
+      ["RxJs", "#1abc9c"],
+      ["Observables", "#c0392b"]
+    ])
     },
     {
       "titulo": "",
