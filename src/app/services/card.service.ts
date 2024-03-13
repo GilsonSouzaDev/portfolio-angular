@@ -41,7 +41,9 @@ export class CardService {
       ["Routing", "#f39c12"],
       ["Forms", "#9b59b6"],
       ["RxJs", "#1abc9c"],
-      ["Observables", "#c0392b"]
+      ["Observables", "#c0392b"],
+      ["search", "#16a085"],
+      ["login", "#d35400"],
     ])
     },
     {
