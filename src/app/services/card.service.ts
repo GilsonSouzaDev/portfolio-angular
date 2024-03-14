@@ -47,7 +47,7 @@ export class CardService {
     ])
     },
     {
-      "titulo": "RestAPI-RocketseatAuction",
+      "titulo": "RocketseatAuction",
       "icone": "/assets/icons/c-sharp-c-seeklogo.svg",
       "altIcone": "icone-c-sharp",
       "imagem": "/assets/card-img/auctions-img.jpeg",
