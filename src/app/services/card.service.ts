@@ -47,26 +47,43 @@ export class CardService {
     ])
     },
     {
-      "titulo": "",
-      "icone": "",
-      "altIcone": "",
-      "imagem": "",
-      "altImagem": "",
+      "titulo": "RestAPI-RocketseatAuction",
+      "icone": "/assets/icons/c-sharp-c-seeklogo.svg",
+      "altIcone": "icone-c-sharp",
+      "imagem": "/assets/card-img/auctions-img.jpeg",
+      "altImagem": "leilao-imagem",
       "linkDeploy": "",
-      "linkGitHub": "",
+      "linkGitHub": "https://github.com/GilsonSouzaDev/RestAPI-RocketseatAuction",
       "colorCard": "var(--color-card)",
-      "skills": new Map([["", ""]])
+      "skills": new Map([ 
+        ["MVC", "#f39c12"],
+        ["Interfaces", "#e74c3c"],
+        ["Propriedades", "#9b59b6"],
+        ["Services", "#1abc9c"],
+        ["ASP.NET Core", "#3498db"],
+        ["nUnity", "#16a085"],
+        ["Authentication", "#d35400"]
+    ])
     },
     {
-      "titulo": "",
-      "icone": "",
-      "altIcone": "",
-      "imagem": "",
-      "altImagem": "",
-      "linkDeploy": "",
-      "linkGitHub": "",
+      "titulo": "Portifólio",
+      "icone": "/assets/icons/angular-icon-seeklogo.svg",
+      "altIcone": "icone-angular",
+      "imagem": "/assets/card-img/portifolio-img.JPG",
+      "altImagem": "imagem-portifolio",
+      "linkDeploy": "https://www.gilsondev.com.br",
+      "linkGitHub": "https://github.com/GilsonSouzaDev/portifolio-angular",
       "colorCard": "var(--color-card)",
-      "skills": new Map([["", ""]])
+      "skills": new Map([
+      ["Components", "#3498db"],
+      ["Services", "#e74c3c"],
+      ["G-Sap", "#f39c12"],
+      ["Forms", "#9b59b6"],
+      ["NgModel", "#1abc9c"],
+      ["Animations", "#c0392b"],
+      ["standalone", "#16a085"],
+      ["interfaces", "#d35400"]
+    ])
     }
   ]
 

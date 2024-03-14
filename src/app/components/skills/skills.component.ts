@@ -2,7 +2,6 @@ import { AfterViewInit, Component, ElementRef, QueryList, ViewChild, ViewChildre
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 
-import { Icone } from '../../interfaces/Icone';
 import { Skill } from '../../interfaces/Skill';
 import { gsap } from 'gsap';
 import { IconsService } from '../../services/icons.service';
