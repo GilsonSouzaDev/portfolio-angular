@@ -22,7 +22,7 @@ gsap.from(elemento, {
   x: posicaoInicialX,
   opacity: 0,
   duration: duracao,
-  ease: 'elastic.out(1, 0.8)',
+  ease: 'elastic.out(1, 0.6)',
   delay: 0.5 * delayMultiplier,
     scrollTrigger: {
       trigger: section,
