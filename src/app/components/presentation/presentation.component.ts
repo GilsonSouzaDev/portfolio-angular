@@ -56,12 +56,16 @@ export class PresentationComponent implements AfterViewInit{
   }
 
   abrirTelegram() {
-    // Substitua 'seu_nome_de_usuario' pelo seu nome de usuário no Telegram
     const nomeUsuario = '@gilsonsouzadev';
-    const mensagemInicial = 'Estou aqui pelo seu portifólio';
-    window.open(`https://t.me/${nomeUsuario}?start=${encodeURIComponent(mensagemInicial)}`, '_blank');
+    const mensagemInicial = 'Estou aqui pelo seu portfólio';
+    // Tente abrir o aplicativo Telegram primeiro usando o protocolo "tg://"
+    window.location.href = `tg://msg_url?text=${encodeURIComponent(mensagemInicial)}&to=${nomeUsuario}`;
+    // Se o protocolo "tg://" não funcionar, abra o link da web
+    setTimeout(() => {
+        window.location.href = `https://t.me/${nomeUsuario}?start=${encodeURIComponent(mensagemInicial)}`;
+    }, 500);
   }
-
+  
   abrirGitHub(){
     window.open(`https://github.com/GilsonSouzaDev`,'_blank');
   }
