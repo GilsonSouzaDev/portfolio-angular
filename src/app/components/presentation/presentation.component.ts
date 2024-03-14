@@ -50,7 +50,7 @@ export class PresentationComponent implements AfterViewInit{
 
   abrirWhatsApp() {
     // Substitua 'seu_numero_de_telefone' pelo seu número de telefone com código do país
-    const numeroTelefone = '11947799976';
+    const numeroTelefone = '55011947799976';
     const mensagemInicial = 'Estou aqui pelo seu portifólio';
     window.open(`https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagemInicial)}`, '_blank');
   }
