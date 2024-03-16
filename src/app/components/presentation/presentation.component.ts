@@ -56,11 +56,11 @@ export class PresentationComponent implements AfterViewInit{
   }
 
   abrirTelegram() {
-    const nomeUsuario = 'gilsonsouzadev';
+    const nomeUsuario = '@gilsonsouzadev';
     const mensagemInicial = 'Estou aqui pelo seu portfólio';
 
     // Tente abrir o aplicativo Telegram primeiro usando o protocolo "tg://"
-    const url = `tg://resolve?domain=${nomeUsuario}&start=${encodeURIComponent(mensagemInicial)}`;
+    const url = `tg://msg?text=${encodeURIComponent(mensagemInicial)}&to=${nomeUsuario}`;
     window.location.href = url;
 
     // Se o protocolo "tg://" não funcionar, abra o link da web
@@ -68,6 +68,7 @@ export class PresentationComponent implements AfterViewInit{
         window.open(`https://t.me/${nomeUsuario}?start=${encodeURIComponent(mensagemInicial)}`, '_blank');
     }, 500);
 }
+
 
   
   abrirGitHub(){
