@@ -56,7 +56,7 @@ export class PresentationComponent implements AfterViewInit{
   }
 
   abrirTelegram() {
-    const nomeUsuario = '@gilsonsouzadev';
+    const nomeUsuario = 'gilsonsouzadev';
     const mensagemInicial = 'Estou aqui pelo seu portfólio';
 
     // Tente abrir o aplicativo Telegram primeiro usando o protocolo "tg://"
