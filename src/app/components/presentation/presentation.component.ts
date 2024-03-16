@@ -57,17 +57,17 @@ export class PresentationComponent implements AfterViewInit{
 
   abrirTelegram() {
     const nomeUsuario = 'gilsonsouzadev';
-    const mensagemInicial = 'Estou aqui pelo seu portfólio';
+    const mensagemInicial = 'Estou aqui pelo seu portifólio';
 
-    // Tente abrir o aplicativo Telegram primeiro usando o protocolo "tg://"
     const url = `tg://msg?text=${encodeURIComponent(mensagemInicial)}&to=${nomeUsuario}`;
     window.location.href = url;
 
-    // Se o protocolo "tg://" não funcionar, abra o link da web
     setTimeout(() => {
         window.open(`https://t.me/${nomeUsuario}?start=${encodeURIComponent(mensagemInicial)}`, '_blank');
     }, 500);
-}
+  }
+
+
 
 
   
