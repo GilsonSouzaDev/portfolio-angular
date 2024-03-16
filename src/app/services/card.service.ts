@@ -69,7 +69,7 @@ export class CardService {
     ])
     },
     {
-      "titulo": "Portifólio",
+      "titulo": "Portfólio",
       "icone": "/assets/icons/angular-icon-seeklogo.svg",
       "altIcone": "icone-angular",
       "imagem": "/assets/card-img/portifolio-img.JPG",
