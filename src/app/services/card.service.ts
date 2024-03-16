@@ -8,7 +8,7 @@ export class CardService {
 
   card: Card[] = [
     {
-      "titulo": "Rest-API: Candidato",
+      "titulo": "Candidato",
       "icone": "/assets/icons/c-sharp-c-seeklogo.svg",
       "altIcone": "icone-c#",
       "imagem": "/assets/card-img/rest-api candidato.jpeg",
@@ -17,6 +17,7 @@ export class CardService {
       "linkGitHub": "https://github.com/GilsonSouzaDev/RestAPI-Candidato",
       "colorCard": "var(--color-card)",
       "skills": new Map([
+        ["Rest-API","#778899"],
         ["MVC", "#f39c12"],
         ["Interfaces", "#e74c3c"],
         ["Propriedades", "#9b59b6"],
@@ -36,14 +37,15 @@ export class CardService {
       "linkGitHub": "https://github.com/GilsonSouzaDev/alura-geek",
       "colorCard": "var(--color-card)",
       "skills": new Map([
+      ["Comerce-Page","#778899"], 
       ["Components", "#3498db"],
       ["Services", "#e74c3c"],
       ["Routing", "#f39c12"],
       ["Forms", "#9b59b6"],
       ["RxJs", "#1abc9c"],
       ["Observables", "#c0392b"],
-      ["search", "#16a085"],
-      ["login", "#d35400"],
+      ["Search", "#16a085"],
+      ["Login", "#d35400"],
     ])
     },
     {
@@ -55,7 +57,8 @@ export class CardService {
       "linkDeploy": "",
       "linkGitHub": "https://github.com/GilsonSouzaDev/RestAPI-RocketseatAuction",
       "colorCard": "var(--color-card)",
-      "skills": new Map([ 
+      "skills": new Map([
+        ["Rest-API","#778899"], 
         ["MVC", "#f39c12"],
         ["Interfaces", "#e74c3c"],
         ["Propriedades", "#9b59b6"],
@@ -75,14 +78,14 @@ export class CardService {
       "linkGitHub": "https://github.com/GilsonSouzaDev/portifolio-angular",
       "colorCard": "var(--color-card)",
       "skills": new Map([
-      ["Components", "#3498db"],
+      ["Landing Page", "#778899"],
       ["Services", "#e74c3c"],
       ["G-Sap", "#f39c12"],
       ["Forms", "#9b59b6"],
       ["NgModel", "#1abc9c"],
       ["Animations", "#c0392b"],
-      ["standalone", "#16a085"],
-      ["interfaces", "#d35400"]
+      ["Standalone", "#16a085"],
+      ["Interfaces", "#d35400"]
     ])
     }
   ]
