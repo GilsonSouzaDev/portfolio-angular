@@ -25,11 +25,6 @@ export class IconsService {
       "alt": "C-Sharp",  
     },
     {
-      "name": "Java",
-      "src": "/assets/icons/java-seeklogo.svg",
-      "alt": "Java", 
-    },
-    {
       "name": "MySQL",
       "src": "/assets/icons/mysql-seeklogo.svg",
       "alt": "MySQL", 

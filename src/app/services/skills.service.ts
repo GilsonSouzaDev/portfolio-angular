@@ -65,25 +65,6 @@ export class SkillsService {
   
     },
     {
-      "titulo": "Java",
-      "conhecidas": new Map([
-        ["Classes e Objetos", "#3498db"],
-        ["Interfaces", "#e74c3c"],
-        ["Polimorfismo", "#9b59b6"],
-        ["Collections", "#34495e"],
-        ["Facade", "#16a085"],
-        ["Strategy", "#d35400"],
-      ]),
-      "estudadas": new Map([
-        ["Spring Framework", "#c0392b"],
-        ["Hibernate", "#2980b9"],
-        ["Design Patterns", "#8e44ad"],
-        ["Java Generics", "#27ae60"],
-        ["JDBC", "#e67e22"],
-    ]),
-    
-    },
-    {
     "titulo": "MySQL",
     "conhecidas": new Map([
         ["Consultas SQL", "#3498db"],
